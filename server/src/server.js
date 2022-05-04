@@ -1,9 +1,8 @@
 const path = require('path')
 
+const cors = require('cors')
 const express = require('express')
 const dotenv = require('dotenv').config({path: path.resolve(__dirname, '../../.env') })
-
-const cors = require('cors')
 const favicon = require('serve-favicon')
 const jwt = require('jsonwebtoken')
 const { MongoClient, ObjectId } = require('mongodb')
@@ -48,7 +47,7 @@ MongoClient.connect(DATABASE_URL)
         return res.status(400).send({ message: 'Invalid login.' })
       }
       
-      const accessToken = jwt.sign({ username: user.id }, JWT_KEY, { expiresIn: '60m' })
+      const accessToken = jwt.sign({}, JWT_KEY, { expiresIn: '60m' })
       return res.send({ accessToken, username: username })
     })
   })
