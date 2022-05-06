@@ -34,15 +34,15 @@ Then, I started coding the frontend in React. I created four subpages: home (whe
 Rank the Book can be accessed [here](https://rank-the-book.herokuapp.com).
 
 <p align="center">
-  <img src="client/src/assets/Add.PNG" />
-</p>
-
-<p align="center">
   <img src="client/src/assets/Home.PNG" />
 </p>
 
 <p align="center">
   <img src="client/src/assets/Rankings.PNG" />
+</p>
+
+<p align="center">
+  <img src="client/src/assets/Add.PNG" />
 </p>
 
 <p align="center">
