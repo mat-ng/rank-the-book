@@ -1,5 +1,5 @@
 .env
 node_modules
 
-server/assets
-server/scripts
+server/src/assets
+server/src/scripts

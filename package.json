@@ -9,8 +9,8 @@
     "server": "npm start --prefix server",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
     "start": "node server/src/server.js",
-    "reset-books": "node server/scripts/reset-books.js",
-    "reset-users": "node server/scripts/reset-users.js",
+    "reset-books": "node server/src/scripts/reset-books.js",
+    "reset-users": "node server/src/scripts/reset-users.js",
     "heroku-postbuild": "npm install --prefix client && npm install --prefix server"
   },
   "keywords": [],
