@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Redirect, Route, Switch } from 'react-router-dom'
 import IsMobileBrowser from './hooks/IsMobileBrowser.jsx'
 
 import Add from './components/Add.jsx'
@@ -39,6 +39,7 @@ const App = () => {
                     <Route path='/rankings' component={Rankings} />
                     <Route path ='/add' component={Add} />
                     <Route path='/profile' component={Profile} />
+                    <Route><Redirect to='/'/></Route>
                 </Switch>
             </Router>
         )
@@ -65,6 +66,7 @@ const App = () => {
                 <Route path='/rankings' component={Rankings} />
                 <Route path ='/add' component={Add} />
                 <Route path='/profile' component={Profile} />
+                <Route><Redirect to='/'/></Route>
             </Switch>
         </Router>
     )
