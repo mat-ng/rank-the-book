@@ -1,11 +1,11 @@
 # Rank The Book
-![Project Banner](client/src/assets/Poster.jpg)
+![Project Banner](client/src/assets/Banner.jpg)
 
 The app can be accessed [here](https://rank-the-book.herokuapp.com).
 
-Rank The Book is fullstack web platform for users to vote and determine their favourite books. Users can create accounts to add or remove books, while also voting to influence the books' relative rankings.
+Rank The Book is a fullstack web platform for people to share and vote for their favourite books. Users can create accounts to add or remove their favorite books, while also voting to increase or decrease each book's ranking.
 
-The site was created using MERN stack to store user data, as well as [JSON web tokens](https://jwt.io) to handle user authentication.
+The site was created using MERN stack, as well as [JSON web tokens](https://jwt.io) to handle user authentication. The book voting system is an implementation of A/B testing in order to collect users' judgements of books.
 
 ## Inspiration
 
@@ -48,6 +48,14 @@ Rank The Book can be accessed [here](https://rank-the-book.herokuapp.com).
 <p align="center">
   <img src="client/src/assets/Login.PNG" />
 </p>
+
+## Future Roadmap
+
+There are various different ways that Rank The Book can be improved:
+
+1. After authentication, users' JWTs are being stored in local storage (i.e. inside users' browsers). However, this is not secure because local storage is not protected from cross-site scripting (XSS) attacks, meaning that malicious users could possibly inject Javascript code into the app to steal user data. To improve this, I could look into storing JWTs in cookies, which have security flags to protect from XSS attacks.
+
+2. The app does not currently provide support for users to recover their accounts (if they forget their username and/or password). As such, I could implement an option for users to connect an email with their accounts, so the app could email them links to reset their usernames or passwords accordingly.
 
 ## License
 
