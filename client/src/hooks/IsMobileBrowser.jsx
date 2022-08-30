@@ -16,7 +16,7 @@ const IsMobileBrowser = () => {
         }
     }, [])
 
-    return (width < 768)
+    return (width < 0)
 }
 
 export default IsMobileBrowser
