@@ -1,15 +1,15 @@
 # Rank The Book
-![Project Banner](client/src/assets/Banner.jpg)
+![Project Banner](client/src/assets/Banner1.jpg)
 
 The app can be accessed [here](https://rank-the-book.herokuapp.com).
 
-Rank The Book is a fullstack web platform for people to share and vote for their favourite books. Users can create accounts to add or remove their favorite books, while also voting to increase or decrease each book's ranking.
+Rank The Book is a fullstack web platform for people to share and vote for their favorite books. Users can create accounts to add or remove their favorite books, while also voting to increase or decrease each book's ranking.
 
 The site was created using MERN stack, as well as [JSON web tokens](https://jwt.io) to handle user authentication. The book voting system is an implementation of A/B testing in order to collect users' judgements of books.
 
 ## Inspiration
 
-It's without a doubt that we all have our unique favourite books. However, I also wanted to figure out what other people thought of my personal favourites, compared to their own. Rank The Book provides users with this platform to share their favourite books, before users vote between books to determine every book's relative ranking.
+It's without a doubt that we all have our unique favorite books. However, I also wanted to figure out what other people thought of my personal favourites, compared to their own. Rank The Book provides users with this platform to share their favorite books, before users vote between books to determine every book's relative ranking.
 
 ## Goals
 
