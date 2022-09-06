@@ -1,7 +1,7 @@
 # Rank The Book
 ![Project Banner](client/src/assets/Banner.png)
 
-The app can be accessed [here](https://rank-the-book.herokuapp.com).
+The app can be accessed [here](https://rank-book.herokuapp.com).
 
 Rank The Book is a fullstack web platform for people to share and vote for their favorite books. Users can create accounts to add or remove their favorite books, while also voting to increase or decrease each book's ranking.
 
@@ -31,7 +31,7 @@ Then, I started coding the front-end in React. I created four subpages: a <em>ho
 
 ## Final Result
 
-Rank The Book can be accessed [here](https://rank-the-book.herokuapp.com).
+Rank The Book can be accessed [here](https://rank-book.herokuapp.com).
 
 <p align="center">
   <img src="client/src/assets/Home.PNG" />
