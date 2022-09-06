@@ -1,5 +1,5 @@
 # Rank The Book
-![Project Banner](client/src/assets/Banner.png)
+![Project Banner](client/src/assets/Banner.PNG)
 
 The app can be accessed [here](https://rank-book.herokuapp.com).
 
