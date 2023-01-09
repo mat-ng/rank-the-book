@@ -1,8 +1,6 @@
 # Rank The Book
 ![Project Banner](client/src/assets/Banner.png)
 
-The app can be accessed [here](https://rank-book.herokuapp.com).
-
 Rank The Book is a fullstack web platform for people to share and vote for their favorite books. Users can create accounts to add or remove their favorite books, while also voting to increase or decrease each book's ranking.
 
 The site was created using MERN stack, as well as [JSON web tokens](https://jwt.io) to handle user authentication. The book voting system is an implementation of A/B testing in order to collect users' judgements of books.
@@ -30,8 +28,6 @@ With these ideas in mind, I started developing Rank The Book. I created the data
 Then, I started coding the front-end in React. I created four subpages: a <em>home</em> page where users vote for books, a <em>rankings</em> page that shows all books' rankings, an <em>add</em> page where users can share their own books, and a sign-in page for users to login and obtain a new valid JWT.
 
 ## Final Result
-
-Rank The Book can be accessed [here](https://rank-book.herokuapp.com).
 
 <p align="center">
   <img src="client/src/assets/Home.PNG" />
