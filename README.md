@@ -1,6 +1,8 @@
 # Rank The Book
 ![Project Banner](client/src/assets/Banner.png)
 
+A video demo can be viewed [here](https://youtu.be/odPjuV2oZv8).
+
 Rank The Book is a fullstack web platform for people to share and vote for their favorite books. Users can create accounts to add or remove their favorite books, while also voting to increase or decrease each book's ranking.
 
 The site was created using MERN stack, as well as [JSON web tokens](https://jwt.io) to handle user authentication. The book voting system is an implementation of A/B testing in order to collect users' judgements of books.
@@ -29,7 +31,7 @@ Then, I started coding the front-end in React. I created four subpages: a <em>ho
 
 ## Final Result
 
-[![Demo](http://img.youtube.com/vi/odPjuV2oZv8/0.jpg)](https://www.youtube.com/watch?v=odPjuV2oZv8)
+A video demo can be viewed [here](https://youtu.be/odPjuV2oZv8).
 
 <p align="center">
   <img src="client/src/assets/Home.PNG" />
