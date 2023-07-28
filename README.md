@@ -29,6 +29,8 @@ Then, I started coding the front-end in React. I created four subpages: a <em>ho
 
 ## Final Result
 
+[![Demo](http://img.youtube.com/vi/odPjuV2oZv8/0.jpg)](https://www.youtube.com/watch?v=odPjuV2oZv8)
+
 <p align="center">
   <img src="client/src/assets/Home.PNG" />
 </p>
