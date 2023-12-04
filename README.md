@@ -20,7 +20,7 @@ After getting inspired, I developed two main goals for this project:
 
 1. Rank The Book should be developed as a scalable and resilient web application, so that the platform can deliver a seamless user experience while managing large volumes of of book data.
 
-2. The platform should integrate an Elo rating system for books to suport individual book ratings, expected selection probabilities between books, and adaptive adjustments to ratings based on user voting behaviours.
+2. The platform should integrate an Elo rating system for books to support individual book ratings, expected selection probabilities between books, and adaptive adjustments to ratings based on user voting behaviours.
 
 ## Elo Rating System
 
