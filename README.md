@@ -28,11 +28,11 @@ Rank The Book implements a book rating system similar to the Elo rating mechanis
 
 Given two books with ratings of $B_A$ and $B_B$, the probability that $B_A$ is selected over $B_B$ can be computed with the following equation.
 
-### $E_A=\frac{1}{1+10^{\frac{B_A-B_B}{400}}}$
+### $E_A=\frac{1}{1+10^{\frac{B_B-B_A}{400}}}$
 
 The probability that $B_B$ is selected over $B_A$ can be computed with the following equation.
 
-### $E_B=\frac{1}{1+10^{\frac{B_B-B_A}{400}}}$
+### $E_B=\frac{1}{1+10^{\frac{B_A-B_B}{400}}}$
 
 These equations involve an exponential function where the difference in ratings between books is divided by a scaling factor of 400. This simply assumes that for every 400-point difference in book ratings, the higher-rated book is expected to have approximately a tenfold advantage in its odds ratio compared to the lower-rated book.
 
