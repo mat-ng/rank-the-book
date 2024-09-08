@@ -32,3 +32,6 @@ For instance, when a lower-rated book is selected over a higher-rated book, it e
 <p align="center">
   <img src="public/rankings.png" />
 </p>
+
+## License
+[MIT License](https://github.com/mat-ng/rank-the-book/blob/main/LICENSE)
