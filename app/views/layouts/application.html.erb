@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Rank The Book" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <link rel="icon" href="/books.png" type="image/png">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'navbar', media: 'all' %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= render 'shared/navbar' %>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

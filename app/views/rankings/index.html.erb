@@ -1,0 +1,5 @@
+<div class="books-container" style="display: flex; align-items: center; flex-direction: column;">
+  <% @books.each_with_index do |book, i| %>
+    <%= render partial: 'card', locals: { book: book, i: i, books: @books } %>
+  <% end %>
+</div>

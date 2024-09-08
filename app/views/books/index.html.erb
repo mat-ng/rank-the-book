@@ -1,0 +1,37 @@
+<h1 style="text-align: center; margin: 30px; font-size: 28px; font-weight: normal; font-family: 'Trebuchet MS'">
+  Would you rather read <b><%= @books[0].title %></b> or <b><%= @books[1].title %></b>?
+</h1>
+
+<div style="width: 100%; margin-top: 30px; display: flex; justify-content: center;">
+  <div>
+    <h1 style="font-family: 'Trebuchet MS'; font-size: 23px; text-align: center;"><%= @books[0].title %></h1>
+    <%= button_to update_ratings_path(winner_id: @books[0].id, loser_id: @books[1].id), method: :patch, class: 'button' do %>
+      <%= image_tag @books[0].image, width: '288px', height: '360px' %>
+    <% end %>
+    <% odds = win_probability(@books[0].rating, @books[1].rating).round %>
+    <div style="margin-top: 10px; width: 280px;">
+      <div style="display: flex; align-items: top;">
+        <%= image_tag odds > 50 ? 'up_green_triangle.png' : odds < 50 ? 'down_red_triangle.png' : 'straight_gray_line.png', width: '25px', height: '20px' %>
+        <span style="color: <%= odds > 50 ? 'green' : odds < 50 ? 'red' : 'gray' %>; margin-left: 10px; font-size: 18px; font-family: 'Trebuchet MS'">
+          <%= "#{odds}% of users prefer #{@books[0].title}" %>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-left: 80px;">
+    <h1 style="font-family: 'Trebuchet MS'; font-size: 23px; text-align: center;"><%= @books[1].title %></h1>
+    <%= button_to update_ratings_path(winner_id: @books[1].id, loser_id: @books[0].id), method: :patch, class: 'button' do %>
+      <%= image_tag @books[1].image, width: '288px', height: '360px' %>
+    <% end %>
+    <% odds = win_probability(@books[1].rating, @books[0].rating).round %>
+    <div style="margin-top: 10px; width: 280px;">
+      <div style="display: flex; align-items: top;">
+        <%= image_tag odds > 50 ? 'up_green_triangle.png' : odds < 50 ? 'down_red_triangle.png' : 'straight_gray_line.png', width: '25px', height: '20px' %>
+        <span style="color: <%= odds > 50 ? 'green' : odds < 50 ? 'red' : 'gray' %>; width: 280px; margin-left: 10px; font-size: 18px; font-family: 'Trebuchet MS'">
+          <%= "#{odds}% of users prefer #{@books[1].title}" %>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

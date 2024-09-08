@@ -1,0 +1,10 @@
+<div class="card" style="margin-top: 10px; width: 700px; background: #FFFFFF; border: 2px solid rgba(0, 0, 0, 0.12);">
+  <div style="display: flex;">
+    <%= image_tag book.image, alt: book.title, style: 'width: 130px; height: 163px;' %>
+    <div style="font-family: 'Trebuchet MS'; font-size: 23px; line-height: 1.5; padding: 16px;">
+      <b><%= book.title %></b><br/>
+      <span style="font-size: 18px;">Ranked as <b>#<%= i+1 %></b> book</span><br/>
+      <span style="font-size: 18px;">In top <b><%= calculate_ranking(book, books) %>%</b> of all books</span>
+    </div>
+  </div>
+</div>
